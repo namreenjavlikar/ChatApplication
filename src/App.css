@@ -70,7 +70,7 @@ body {
 
 #frame .content .contact-profile img {
   width: 40px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   float: left;
   margin: 9px 12px 0 9px;
 }
@@ -258,8 +258,65 @@ body {
   font-size: 19.5px;
 }
 
-.fa-spinner {
+.spinner1 {
   font-size: 30px;
   color: #834A54;
   margin-top: 25px;
+}
+
+.login-page {
+  width: 80%;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #834A54;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #733C4C;
+}
+
+.login-body {
+  background: #ECECEC;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
 }

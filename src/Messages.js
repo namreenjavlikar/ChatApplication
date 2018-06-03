@@ -5,7 +5,7 @@ import 'firebase/firestore'
 import db from './db';
 import $ from 'jquery'
 import Login from './Login'
-
+import logo from './logo.png'
 class Messages extends Component {
 
     state = {
@@ -55,15 +55,16 @@ class Messages extends Component {
                 <div id="frame">
                     <div className="content">
                         <div className="contact-profile">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROkrPnaetmzESRVAg8354Cf8USXY9B4rOAZFut1aWMakL8aj9W" alt="" />
+                            <img src={logo} alt="" />
                             <p>{sessionStorage.getItem('user')}</p>
                         </div>
                         <div className="messages">
+                        <br/>
                             {
                                 this.state.messages.length == 0
                                     ?
                                     <center>
-                                        <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>
+                                        <i class="fas fa-spinner fa-spin spinner1" aria-hidden="true"></i>
                                     </center>
                                     :
                                     <ul>

@@ -30,22 +30,6 @@ class App extends Component {
   handleLogin = () => {
     this.setState({ loggedin: true })
   }
-  async handleSend() {
-    let currentTime = new Date();
-    let contentMessage = this.state.content;
-
-    this.setState({ content: '', changecss: false })
-
-    if (contentMessage != '') {
-      await db.collection('messages').add({ content: contentMessage, from: sessionStorage.getItem('user'), time: currentTime })
-      //  $(".messages").animate({ scrollTop: document.querySelector('.messages').clientHeight }, "fast");
-    }
-  }
-
-  handleSubmit() {
-    sessionStorage.setItem('user', this.state.user)
-    this.setState({ login: false })
-  }
 
   render() {
     return (
