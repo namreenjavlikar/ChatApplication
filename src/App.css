@@ -98,6 +98,7 @@ body {
   background: transparent;
 }
 
+
 #frame .content .messages::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -177,7 +178,11 @@ body {
   width: 100%;
   z-index: 99;
 }
-
+/* #frame .content .message-input {
+  top: 80%;
+  position: absolute;
+  width: 100%;
+} */
 #frame .content .message-input .wrap {
   position: relative;
 }
